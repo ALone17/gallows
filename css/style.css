@@ -1,0 +1,217 @@
+/* - FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* -SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/****************************************************/
+/* 
+
+General color: #3f48cc;
+General shade:#323aa3
+Light General: #656dd6;
+Second color: #495057
+Shades Second: #3a4046;
+Light Second: #dbdcdd
+*/
+/****************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.hidden {
+  display: none !important;
+}
+
+header {
+  padding: 1.6rem;
+  background-image: linear-gradient(
+      rgba(173, 181, 189, 0.356),
+      rgba(173, 181, 189, 0.356)
+    ),
+    url("../img/header.jpg");
+  background-size: cover;
+  background-position: top;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.323);
+  margin-bottom: 12.8rem;
+}
+
+h1 {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3f48cc;
+}
+
+/* Элементы 'запуска' */
+
+.start {
+  width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  color: #3f48cc;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  color: #3a4046;
+}
+
+.btn:hover .play-icon--hover {
+  display: block;
+}
+.btn:hover .play-icon {
+  display: none;
+}
+
+.play-icon,
+.play-icon--hover {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+}
+
+.play-icon--hover {
+  display: none;
+}
+
+/* Элементы 'категорий' */
+
+.categories {
+  width: 100rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-categories {
+  font-size: 5.2rem;
+  font-weight: 600;
+  color: #3a4046;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 8rem;
+}
+
+.categories-links {
+  font-size: 4.4rem;
+  font-weight: 500;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.4rem;
+}
+
+.categories-link:link,
+.categories-link:visited {
+  padding: 2rem 3rem;
+  text-decoration: none;
+  color: #495057;
+  box-shadow: inset 0px 0px 9px #656dd6;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.categories-link:hover,
+.categories-link:active {
+  background-color: #323aa3;
+  color: #dbdcdd;
+}
+
+/* Элементы игрового стола */
+
+.play-heading {
+  font-size: 6.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3a4046;
+  line-height: 1.2;
+  letter-spacing: 20.5px;
+  margin-bottom: 2.4rem;
+}
+
+.section-play {
+  position: relative;
+  background-image: url("../img/play.jpg");
+  background-size: cover;
+  background-position: top;
+  border-radius: 9px;
+  width: 100rem;
+  padding: 3.2rem;
+  box-shadow: 0 9px 15px rgba(0, 0, 0, 0.144);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.control-play {
+  display: none;
+  flex-direction: column;
+  gap: 6.4rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-75%);
+
+  font-size: 4.4rem;
+  font-weight: 500;
+  text-align: center;
+  padding-left: 3.2rem;
+}
+
+.play-tabel img {
+  width: 25.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.abc {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 2.4rem;
+}
+
+.letter {
+  font-size: 4.4rem;
+  font-weight: 500;
+  color: #495057;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.letter:hover {
+  color: #0d0e29;
+  border-color: #656dd6;
+}

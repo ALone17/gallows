@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Игра в слова. Игрокам загадывается слово,
+     которое они должны угадать, используя буквы алфавита и возможность совершить ограниченное количество ошибок." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/logo/logo.png" />
+    <link rel="appel-touch-icon" href="img/logo/logo-appel.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Висельник - как ты собираешься выжить?</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <header>
+            <h1>В_сельн_к</h1>
+        </header>
+        <section class="section-main-menu">
+            <div class="start">
+                <a href="#" class="btn">
+                    <ion-icon class="play-icon" name="play-outline"></ion-icon>
+                    <ion-icon class="play-icon--hover" name="play"></ion-icon>
+                </a>
+                <img class="img-end hidden" src="img/Висельник_шаги/end.png" alt="Картинка где челик весит" />
+                <img class="img-end" src="img/Висельник_шаги/begin.png" alt="Картинка где челик весит" />
+            </div>
+            <div class="categories hidden">
+                <h2 class=header-categories>Выбери категорию :</h2>
+                <div class="categories-links">
+                    <a class="categories-link" href="#">Смерть</a>
+                    <a class="categories-link" href="#">Космос</a>
+                    <a class="categories-link" href="#">Наука</a>
+                    <a class="categories-link" href="#">Боль</a>
+                    <a class="categories-link" href="#">Музыка</a>
+                    <a class="categories-link" href="#">Игра</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-play hidden">
+            <h3 class="play-heading">с__г____я</h3>
+            <div class="play-tabel">
+                <div class="control-play">
+                    <a class="categories-link" href="#">Еще раз</a>
+                    <a class="categories-link" href="#">Категории</a>
+                </div>
+                <img src="img/Висельник_шаги/begin.png" alt="Картинка где челик не весит" />
+                <img class="hidden" src="img/Висельник_шаги/Middle.png" alt="Картинка где челик почти весит"
+                    data-number="2" />
+                <img class="hidden" src="img/Висельник_шаги/end.png" alt="Картинка где челик весит" data-number="3" />
+                <div class="abc">
+                    <p class="letter">А</p>
+                    <p class="letter">Б</p>
+                    <p class="letter">В</p>
+                    <p class="letter">Г</p>
+                    <p class="letter">Д</p>
+                    <p class="letter">Е</p>
+                    <p class="letter">Ё</p>
+                    <p class="letter">Ж</p>
+                    <p class="letter">З</p>
+                    <p class="letter">И</p>
+                    <p class="letter">Й</p>
+                    <p class="letter">К</p>
+                    <p class="letter">Л</p>
+                    <p class="letter">М</p>
+                    <p class="letter">Н</p>
+                    <p class="letter">О</p>
+                    <p class="letter">П</p>
+                    <p class="letter">Р</p>
+                    <p class="letter">С</p>
+                    <p class="letter">Т</p>
+                    <p class="letter">У</p>
+                    <p class="letter">Ф</p>
+                    <p class="letter">Х</p>
+                    <p class="letter">Ц</p>
+                    <p class="letter">Ч</p>
+                    <p class="letter">Ш</p>
+                    <p class="letter">Щ</p>
+                    <p class="letter">Ъ</p>
+                    <p class="letter">Ы</p>
+                    <p class="letter">Ь</p>
+                    <p class="letter">Э</p>
+                    <p class="letter">Ю</p>
+                    <p class="letter">Я</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
